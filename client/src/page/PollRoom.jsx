@@ -32,7 +32,7 @@ export default function PollRoom() {
 
   const fetchPoll = async () => {
     try {
-      const res = await axios.get(`/api/polls/${id}`);
+      const res = await axios.get(`https://backendpoll.onrender.com/api/polls/${id}`);
       setPoll(res.data);
     } catch (err) {
       console.error("Failed to fetch poll:", err);
