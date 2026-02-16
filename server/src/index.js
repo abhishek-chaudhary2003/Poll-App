@@ -10,7 +10,7 @@ const server = http.createServer(app);
 
 export const io = new Server(server, {
   cors: {
-    origin: "http://localhost:5173",
+    origin: "https://poll-ancbjj38o-abhishek10299s-projects.vercel.app/",
     methods: ["GET", "POST"],
     credentials: true,
   },
