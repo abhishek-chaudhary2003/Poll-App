@@ -7,7 +7,7 @@ export default defineConfig({
   plugins: [react(), tailwindcss()],
   server: {
     proxy: {
-      "/api": "https://localhost:5000",
+      "/api": "https://backendpoll.onrender.com",
     },
   },
 });
