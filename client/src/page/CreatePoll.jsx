@@ -34,7 +34,7 @@ export default function CreatePoll() {
 
   const createPoll = async () => {
     try {
-      const res = await axios.post("/api/polls", {
+      const res = await axios.post("https://backendpoll.onrender.com/api/polls", {
         question,
         options,
       });
