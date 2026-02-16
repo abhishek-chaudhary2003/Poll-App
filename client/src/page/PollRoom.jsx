@@ -43,7 +43,7 @@ export default function PollRoom() {
 
   const vote = async (optionId) => {
     try {
-      await axios.post(`/api/polls/${id}/vote`, {
+      await axios.post(`https://backendpoll.onrender.com/api/polls/${id}/vote`, {
         optionId,
         voterId,
       });
