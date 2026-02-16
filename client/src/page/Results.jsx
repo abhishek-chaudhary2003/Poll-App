@@ -7,7 +7,7 @@ export default function Results() {
   const [poll, setPoll] = useState(null);
 
   useEffect(() => {
-    axios.get(`/api/polls/${id}`).then(res => setPoll(res.data));
+    axios.get(`https://backendpoll.onrender.com/api/polls/${id}`).then(res => setPoll(res.data));
   }, [id]);
 
   if (!poll) return <div className="p-6">Loading...</div>;
